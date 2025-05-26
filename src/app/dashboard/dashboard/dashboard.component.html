@@ -1,0 +1,34 @@
+<h2>Dashboard</h2>
+
+<!-- Bar Chart -->
+<h3>Aylık Yeni Kullanıcılar</h3>
+<div class="chart-wrapper">
+  <canvas
+    baseChart
+    [data]="barChartData"
+    [options]="chartOptions"
+    [type]="barChartType">
+  </canvas>
+</div>
+
+<!-- Pie Chart -->
+<h3>Kullanıcı Durumları</h3>
+<div class="chart-wrapper">
+  <canvas
+    baseChart
+    [data]="pieChartData"
+    [options]="chartOptions"
+    [type]="pieChartType">
+  </canvas>
+</div>
+
+<!-- Line Chart -->
+<h3>Günlük Giriş Grafiği</h3>
+<div class="chart-wrapper">
+  <canvas
+    baseChart
+    [data]="lineChartData"
+    [options]="chartOptions"
+    [type]="lineChartType">
+  </canvas>
+</div>

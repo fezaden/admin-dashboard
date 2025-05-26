@@ -1,0 +1,11 @@
+:host {
+  width: 220px;
+  height: calc(100vh - 64px); // 64px = header yüksekliği
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+:host ::ng-deep .mat-list-item {
+  padding: 10px 20px;
+}

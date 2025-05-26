@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Ayş0000",
+      "email": "ayse@example.com"
+    },
+    {
+      "id": "2022",
+      "name": "merhaba ",
+      "email": "merhabas",
+      "password": "11111"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post One",
+      "content": "Content of post one",
+      "userId": 1
+    },
+    {
+      "id": "2",
+      "title": "Post Two",
+      "content": "Content of post two",
+      "userId": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": 1,
+      "content": "Comment on post one",
+      "userId": 2
+    },
+    {
+      "id": "2",
+      "postId": 2,
+      "content": "Comment on post two",
+      "userId": 1
+    }
+  ]
+}
