@@ -14,16 +14,11 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'admin-dashboard' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('admin-dashboard');
-  });
-
-  it('should render title', () => {
+  // The root component only contains the router outlet, so we just verify
+  // that it renders without throwing errors.
+  it('should render without errors', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, admin-dashboard');
+    expect(fixture.nativeElement).toBeTruthy();
   });
 });
